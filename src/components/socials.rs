@@ -1,29 +1,14 @@
 use yew::prelude::*;
 
-#[derive(Properties, PartialEq)]
-pub struct Props {
-    pub title: AttrValue,
-    pub links: Vec<Link>
-}
-
-#[derive(PartialEq, Clone)]
-pub struct Link {
-    pub title: AttrValue,
-    pub href: AttrValue
-}
-
 #[function_component]
-pub fn SocialCard(p: &Props) -> Html {
+pub fn SocialCard() -> Html {
     html! {
-       <div class="card">
-            <div class="card-title">{ p.title.clone() }</div>
-            <div class="links">
-            {
-                p.links.clone().into_iter().map(|l| {
-                    html!{<a key={l.title.to_string()} href={l.href}>{l.title}</a>}
-                }).collect::<Html>()
-            }
-            </div>
+       <div class="card social-card">
+            <div class="card-title">{ "socials" }</div>
+                <div class="links">
+                        <a href="https://github.com/Alespren"><i class="nf nf-dev-github"></i>{ "GitHub" }</a>
+                        <a href="https://linkedin.com/in/ashley-pedersen-4a2048294"><i class="nf nf-dev-linkedin"></i>{ "LinkedIn" }</a>
+                </div>
        </div> 
     }
 }

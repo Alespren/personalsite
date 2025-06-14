@@ -11,7 +11,7 @@ pub struct Props {
 pub fn Project(props: &Props) -> Html {
     html! {
         <li>
-            <a href={props.href.clone()}>{props.title.clone()}</a>
+            <div href={props.href.clone()}>{props.title.clone()}</div>
         </li>
     }
 }

@@ -1,3 +1,5 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
 /* maple-mono-latin-400-normal */
 @font-face {
   font-family: 'Maple Mono';
@@ -23,6 +25,10 @@ body {
   color: #fff6d5;
   background-color: #141216;
   font-size: 1.5rem;
+}
+
+a {
+  color: #d6cfc1;
 }
 
 main {
@@ -55,6 +61,29 @@ footer {
   font-size: 16px;
 }
 
-a {
-  color: inherit;
+.social-card {
+}
+
+.links {
+  display: flex;
+  width: 50%;
+  padding: 24px 4px;
+  align-items: center;
+}
+
+.links a {
+  padding-right: 2em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.links a i {
+  padding-right: 0.5em;
+}
+
+.stay-tuned {
+  text-align: center;
+  padding: 0.5em 0;
+  color: #a1a1a1;
 }
